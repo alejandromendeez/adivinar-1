@@ -1,2 +1,34 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿var generadorAleatorio = new Random();
+int numeroParaAdivinar = generadorAleatorio.Next(1, 15);
+int vidas  = 3;
+Console.WriteLine("Bienvenido al juego de adivinar el número!");
+Console.WriteLine();
+Console.WriteLine("Este juego consiste en que tu tendrás que adivinar un número aleatorio, pero solo dispones de 3 intentos ");
+Console.WriteLine("Escoge un número del 1 al 15");
+string opcionElegida = Console.ReadLine();
+int numeroElegido = Int32.Parse(opcionElegida);
+if (numeroElegido == numeroParaAdivinar)
+{
+    Console.WriteLine("Bravo, a la primera, felicidades!!");
+}
+while (vidas > 0 )
+{
+    else {
+        for (int i=0; i < 3; i++);
+        {
+            if (numeroElegido > numeroParaAdivinar);
+            {
+                int vidasRestantes = (vidas-1);
+            Console.WriteLine($"Lo siento, te has pasado, te quedan {vidasRestantes} vidas");
+            }
+            else (numeroElegido < numeroParaAdivinar)
+            {
+            int vidasRestantes = (vidas-1);
+            Console.WriteLine($"Lo siento, te has quedado corto, te quedan {vidasRestantes} vidas");
+            }
+        }
+        }
+}
+
+if (vidas == 0)
+Console.WriteLine($"El número a adivinar era {numeroParaAdivinar}");
